@@ -1,7 +1,7 @@
 
 # ANSI Escape Print
 
-使用 ANSI 转义码实现漂亮的控制台彩色输出。
+使用 ANSI 转义码实现漂亮的控制台彩色输出，以及其它的控制台指令。
 
 Beautify console output using ANSI escape codes.
 
@@ -27,7 +27,3 @@ for (int r = 255; r > 40; r -= 15) {
     putchar('\n');
 }
 ```
-
-一些问题：
-
-* 为了实现默认参数，用到了 `IS_EMPTY` 宏，但是目前没想到比较好的实现，所以偷懒用了 `__VA_OPT__` ，这对编译器有一定要求
